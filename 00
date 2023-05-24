@@ -1,0 +1,22 @@
+EXÉRCICIO 9
+
+c2r2p3% touch ft_magic
+c2r2p3% > ft_magic
+41 string 42 42 file
+c2r2p3% ls -la
+total 12
+drwxr-xr-x  2 clima-do candidate 4096 May 24 15:35 .
+drwxr-xr-x 13 clima-do candidate 4096 May 24 12:51 ..
+-rw-r--r--  1 clima-do candidate   21 May 24 15:36 ft_magic
+c2r2p3% file -C -m ft_magic
+c2r2p3% ls -la
+total 16
+drwxr-xr-x  2 clima-do candidate 4096 May 24 15:37 .
+drwxr-xr-x 13 clima-do candidate 4096 May 24 12:51 ..
+-rw-r--r--  1 clima-do candidate   21 May 24 15:36 ft_magic
+-rw-r--r--  1 clima-do candidate  688 May 24 15:37 ft_magic.mgc
+c2r2p3% touch test
+c2r2p3% vim test ADICIONA NO TESTE 43 CARACTERES (SENDO QUE O 4 É O 42º E O 2 É O 43º)
+c2r2p3% file -m ft_magic.mgc test
+test: 42 file
+c2r2p3% 
