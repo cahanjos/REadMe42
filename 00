@@ -35,3 +35,21 @@ c2r2p3%
 git log --pretty=tformat:"%H" -n5
 
 bash git_commit.sh | cat -e
+
+
+LISTA 1
+
+EX1
+c2r4p4% id
+c2r4p4% FT_USER=Bocal
+c2r4p4% FT_USER=bocal
+c2r4p4% groups $FT_USER
+bocal : bocal adm cdrom sudo dip plugdev lxd libvirt
+c2r4p4% groups $FT_USER | tr ' ' ','
+bocal,:,bocal,adm,cdrom,sudo,dip,plugdev,lxd,libvirt
+c2r4p4% cat > print_groups.sh
+groups $FT_USER | tr ' ' ','
+^C
+c2r4p4% ./print_groups.sh
+zsh: permission denied: ./print_groups.sh
+
